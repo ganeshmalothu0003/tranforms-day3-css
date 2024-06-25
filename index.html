@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:rgb(245, 8, 20);
+            display: block;
+            text-align: center;
+            
+        }
+        .header{
+            text-align: center;
+            background-image:(rgb(185, 8, 249));
+            color:rgb(246, 2, 2);
+            padding: 5px;
+        }
+        button{
+            background-color: rgb(253, 2, 198);
+            color: rgb(237, 237, 226);
+            cursor: pointer;
+            border-radius: 10px;
+            padding: 10px;
+            transition-property: background-color;
+           
+        }
+        button:hover{
+            background-color: goldenrod;
+        }
+        img{
+            margin-top: 25%;
+            margin-bottom: 8px;
+            position: relative;
+            transition: all;
+        }
+        #rotate:hover~.main img{
+            transform: rotate(45deg);
+        }
+        #skew:hover~.main img{
+            transform: skewx(45deg);
+        }
+        #scale:hover~.main img{
+            transform: scale(2);
+        }
+    
+        #translate:hover~.main img{
+            transform: translate(80px,90px);
+        }
+        footer{
+            height: 50px;
+            color: rgb(233, 238, 243);
+            margin-top: 100px;
+            background-color: rgb(231, 138, 7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>TRANSFORMS IMAGE</h1><hr></hr></div>
+        <div >
+            <button id="translate">TRANSLATE</button>
+            <button id="rotate">ROTATE</button>
+            <button id="scale">SCALE</button>
+            <button id="skew">SKEW</button>
+            <div class="main">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy9GvdK7taOS1JotUA0Q5xDXY9tPvUF32rFD60ddVX0lKZfBmQqY35-WwkdA&s"width="500"height="500"border="4">
+            </div>
+        </div>
+    </div>
+     <footer><h3>25-june-2024</h></footer>
+</body>
+</html>
